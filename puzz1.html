@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Puzzle 1</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" >
+        <style>
+            button{
+                width:10%;
+                height: 10%;
+                margin-top:20px;
+                margin-left:15px;
+                background-color: transparent;
+                border: none;text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+        <body>
+        <h1>Welcome to puzzle 1</h1>
+        <h2><span id="step2" >Anything</span> you need to solve the puzzle is available <span onclick="step_1()">here</span>.</h2>
+        <img src="p1_1.png" style="width:20%;">
+        <img id="code_map" src="p1_2.png" style="width:25%;visibility:hidden;">
+        <div id='pass'></div>
+        <h1  id="done" style="visibility:hidden;font-size: 5em;color:red;text-align: center;">Win</h1>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="puzz_1.js"></script>  
+     </body>
+</html>
