@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Puzzle 2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        button {
+            width: 10%;
+            height: 10%;
+            margin-top: 20px;
+            margin-left: 15px;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2em;
+        }
+
+        .dot {
+            height: 50px;
+            width:  50px;
+            background-color: rgb(218, 226, 230);
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to puzzle 2</h1>
+    <h2></h2>
+    <img id="arrow" src="p2_1.png" style="position:relative;height: 25%;left:5%;">
+    <div style="position:relative;display: inline;margin:25px;margin-left: 15%;top:-100px">
+        <span id="d1" class="dot"></span>
+        <span id="d2" class="dot"></span>
+        <span id="d3" class="dot"></span>
+        <span id="d4" class="dot"></span>
+    </div>
+    <div id='pass'></div>
+    <h1  id="done" style="visibility:hidden;font-size: 5em;color:red;text-align: center;">Win</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="puzz_2.js"></script>
+</body>
+
+</html>
