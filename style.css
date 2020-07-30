@@ -29,6 +29,9 @@ button {
   -webkit-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 
 .main {
@@ -40,28 +43,55 @@ button {
 }
 
 #arrow {
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   border-radius: 100px;
-  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 #quote {
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
+  font-weight: normal;
+  width: 50vw;
+  font-size: 1.5rem;
 }
-.dot-wrapper {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+#bt1 {
+  background-color: #ff8080;
 }
+#bt2 {
+  background-color: #80ff80;
+}
+#bt3 {
+  background-color: #8080ff;
+}
+#bt4 {
+  background-color: #f5d470;
+}
+
+#answer {
+  padding: 0.5rem;
+}
+
+#submit {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 600px) {
-  .dot-wrapper {
-    position: static;
-  }
   .main {
     gap: 2rem;
+  }
+  #quote {
+    width: 80vw;
+  }
+  #arrow,
+  .dot {
+    top: 120vh;
   }
 }
