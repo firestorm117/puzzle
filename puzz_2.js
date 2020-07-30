@@ -27,7 +27,7 @@ function dot_normal() {
   }
 }
 
-$("pass > button").click(function (e) {
+$("#pass > button").click(function (e) {
   change($(e.target).attr("id"));
 });
 function change(btn) {
