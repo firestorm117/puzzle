@@ -1,0 +1,14 @@
+Solution
+Don’t overthink this. Each baby born is as equally likely to be a boy as a girl. Therefore, the ratio of girls to boys must be 1:1. It’s as simple as that—honestly.
+
+You might be tempted to solve this problem in a more complicated way. Suppose there are N child-bearing couples. Half of them will have only 1 child: a girl. Half of the other half (or N/4) of them will have two children: one boy and one girl. Half of the remaining quarter (or N/8) will have three children: two boys and one girl. And so on…
+
+In this generation, the total number of children can be found from an infinite geometric series:
+
+N + N/2 + N/4 + N/8 + N/16 + …
+
+The sum of this series is 2N. Since there will be exactly N girls (1 per couple), girls are 50 percent of this generation!
+
+Now, you might point out that it’s impossible for families to have, say, 20 or more children, in the event that they keep having boys. (And, if not impossible, certainly undesirable!) The calculation above might change if King Nupe allows couples to keep their family sizes to a more manageable level.
+
+But even with those restrictions that may lead to more complicated math, the conclusion will always be the same: The ratio is 1:1 as long as each baby born has an equal chance of being a girl or boy.
