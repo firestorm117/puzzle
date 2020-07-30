@@ -9,16 +9,16 @@ $("#arrow").click(function () {
   $(this).css({ transform: "rotate(" + r + "deg)" });
   dot_normal();
   if (r == 120) {
-    $("#d1").css({ "background-color": "red" });
+    $("#d1").css({ "background-color": "#ff8080" });
   }
   if (r == 270) {
-    $("#d1").css({ "background-color": "blue" });
+    $("#d1").css({ "background-color": "#8080ff" });
   }
   if (r == 180) {
-    $("#d1").css({ "background-color": "green" });
+    $("#d1").css({ "background-color": "#80ff80" });
   }
   if (r == 240) {
-    $("#d1").css({ "background-color": "yellow" });
+    $("#d1").css({ "background-color": "#f5d470" });
   }
 });
 function dot_normal() {
