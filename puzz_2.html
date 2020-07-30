@@ -8,15 +8,23 @@
   <body>
     <div class="main">
       <h1 style="color: rgba(0, 0, 0, 0.87);">Welcome to puzzle 2</h1>
-      <h2 id="quote">Time is the wisest counselor of all</h2>
+      <div id="quote">
+      <p>
+        King Noob of the kingdom China dotes on his two daughters so much that
+        he decides the kingdom would be better off with more girls than boys,
+        and he makes the following decree: <b>All child-bearing couples must
+        continue to bear children until they have a daughter!</b><p>
+        But to avoid overpopulation, he makes an additional decree: <b>All
+        child-bearing couples will stop having children once they have a
+        daughter!</b> His subjects immediately begin following his orders.</p>
+        After many years, what’s the expected ratio of girls to boys in China? <p>
+        <b>Hint:</b> <br> The likelihood of each baby born being a girl is,
+        of course, 50 percent.</p>
+      </p></div>
+      <input type="text" placeholder="Enter your answer here" id="answer"><button id="submit" onclick="check()">Submit</button>
+      <span id="d1" class="dot"></span>
       <img id="arrow" src="p2_1.png" />
-      <div class="dot-wrapper">
-        <span id="d1" class="dot"></span>
-        <span id="d2" class="dot"></span>
-        <span id="d3" class="dot"></span>
-        <span id="d4" class="dot"></span>
-      </div>
-      <div id="pass"></div>
+      <div id="pass" style="visibility: hidden;"></div>
       <h1
         id="done"
         style="
