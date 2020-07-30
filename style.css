@@ -1,0 +1,67 @@
+html {
+  background-color: rgba(0, 255, 255, 0.1);
+  font-family: monospace;
+}
+h1,
+h2 {
+  justify-content: center;
+}
+button {
+  height: 10%;
+  margin-top: 20px;
+  margin-left: 15px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: white;
+}
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(218, 226, 230);
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#arrow {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.15);
+}
+
+#quote {
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+.dot-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .dot-wrapper {
+    position: static;
+  }
+  .main {
+    gap: 2rem;
+  }
+}
