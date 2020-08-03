@@ -19,6 +19,7 @@ $("#monitor").click(function (e) {
   $("#home").css("visibility", "hidden");
 });
 $("#back").click(function (e) {
+  $("#ph").css("display", "none");
   $("#back").css("display", "none");
   $("#end").css("display", "none");
   $("#keyboard_").css("display", "none");
@@ -30,7 +31,10 @@ $("#tab").click(function (e) {
   alert("tablet");
 });
 $("#mobile").click(function (e) {
-  alert("phone");
+    $("#ph").css("display", "block");
+    $("#back").css("display", "block");
+    $("#main").css("display", "none");
+    $("#home").css("visibility", "hidden");
 });
 $("#notes").click(function (e) {
   $("#message").css("display", "block");
@@ -64,3 +68,12 @@ function check() {
     $("#done").css("visibility", "visible");
   }
 }
+
+function task1_check()
+        {
+            if($("#answer").val()=='5'){
+                $("#task1").css('display','none');
+                $("#clue1").css('display','block');
+            }
+        }
+       

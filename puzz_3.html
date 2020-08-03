@@ -69,7 +69,16 @@
         <i class="material-icons">reply</i><span>Back</span>
       </div>
     </button>
-    <div class="win">Congrats! You cracked it!</div>
+    <div id='ph'>
+        <img src="img/clue1.png" class="phd" id="clue1">
+        <div class="phd" id="task1">
+            How many secrets do we have??
+            
+      <input type="text" placeholder="Enter your answer here" id="answer" value=""><button id="submit" onclick="task1_check()">Submit</button>
+            </div>
+
+    </div>
+    <div id="win" class="win">Congrats! You cracked it!</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="puzz_3.js"></script>
   </body>

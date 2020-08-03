@@ -30,8 +30,8 @@
 #screen {
   position: fixed;
   width: 680px;
-  top: 30px;
   height: 500px;
+  top: 30px;
   left: -80px;
   background-color: transparent;
 }
@@ -90,6 +90,7 @@ body {
 .xl {
   font-size: 3rem;
   font-weight: 600;
+  z-index: -2;
 }
 
 .kboard {
@@ -131,4 +132,29 @@ body {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.42);
+  display: none;
+}
+#ph {
+  display:none;
+  width: 400px;
+  height: 700px;
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-image: url(phone.png);
+  margin: auto;
+  margin-top: -13rem;
+}
+.phd{
+  display: block;
+  position: relative;
+  left:80px;
+  top:100px;
+  width:230px;
+}
+#clue1{
+  display: none;
+}
+#task1{
+  display: block;
+
 }
