@@ -1,109 +1,76 @@
 <html>
-
-<head>
+  <head>
     <title>Puzzle 3</title>
-    <meta name="viewport" content="width=500px,initial-scale=1">
-    <style>
-        #back{
-            display: none;
-            position:fixed;
-            left:30px;
-            top:90vh;
-        }
-    ::-moz-selection { 
-        background: transparent;
-      }
-      
-      ::selection {
-        background: transparent;
-      }
-        #end{
-            display: none;
-        }
-        .turn {
-            transition: transform 1s;
-            position: fixed;
-            top: 95px;
-            left: 135px;
-            width: 250px;
-            height: 250px;
-            z-index: 10;
-        }
-        #screen{
-            position: fixed;
-            width:680px;
-            top:30px;
-            height:500px;
-            left:-80px;
-            background-color: transparent;
-        }
-        #keyboard_{
-            display:none;
-            position: fixed;
-            top:50px;
-            left:10px;
-            width:80%;
-        }
-        #c1{
-            z-index:40 ;
-        }
-        #message{
-            display:none;
-            width: 500px;
-            height:500px;
-            background-image: url("img/note.png");
-            background-color: transparent;
-            background-size: 100% 100%
-        }
-        #txt{
-            position: relative;
-            top:25%;
-            left:10%;
-            width:80%;
-            font-size: 20px;
-        }
-    </style>
-</head>
+    <meta name="viewport" content="width=500px,initial-scale=1" />
+    <link rel="stylesheet" href="./puzz_3.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="home">
-    <h1>Welcome to puzzle 3</h1>
-    <h2></h2>
-    <img id="main" src="key2.jpg" usemap="#image-map">
+      <h1>Welcome to Puzzle</h1>
+      <h1 class="xl">3</h1>
+      <h2></h2>
+      <img id="main" src="key2.jpg" usemap="#image-map" />
     </div>
     <map name="image-map">
-        <area id="keyboard" coords="179,176,203,230,321,172,298,120" shape="poly">
-        <area id="monitor" coords="33,54,89,166,307,56,311,0,146,0" shape="poly">
-        <area id="tab" coords="355,64,401,82,428,9,402,0,384,1" shape="poly">
-        <area id='mobile' coords="52,231,99,255,91,260,54,260,34,259,40,244" shape="poly">
-        <area id="notes" coords="67,223,120,220,146,199,152,147,131,150,101,162,79,173,69,193,67,210" shape="poly">
+      <area
+        id="keyboard"
+        coords="179,176,203,230,321,172,298,120"
+        shape="poly"
+      />
+      <area
+        id="monitor"
+        coords="33,54,89,166,307,56,311,0,146,0"
+        shape="poly"
+      />
+      <area id="tab" coords="355,64,401,82,428,9,402,0,384,1" shape="poly" />
+      <area
+        id="mobile"
+        coords="52,231,99,255,91,260,54,260,34,259,40,244"
+        shape="poly"
+      />
+      <area
+        id="notes"
+        coords="67,223,120,220,146,199,152,147,131,150,101,162,79,173,69,193,67,210"
+        shape="poly"
+      />
     </map>
     <div id="end">
-    <img id="screen" src="lcd.png" >
-    <img src="img/c1.png" class="turn" id="c6">
-    <img src="img/c2.png" class="turn" id="c5">
-    <img src="img/c3.png" class="turn" id="c4">
-    <img src="img/c4.png" class="turn" id="c3">
-    <img src="img/c5.png" class="turn" id="c2">
-    <img src="img/c6.png" class="turn" id="c1" usemap="#image-map2">
-    <map name="image-map2">
-        <area id="1" s="0" angle="90" coords="125,125,31" shape="circle">
-        <area id="2" s='0' angle="60" coords="125,125,50" shape="circle">
-        <area id="3" s='0' angle="45" coords="125,125,68" shape="circle">
-        <area id="4" s='0' angle="30" coords="125,125,87" shape="circle">
-        <area id="5" s='0' angle="36" coords="125,125,106" shape="circle">
-        <area id="6" s='0' angle="15" coords="125,125,125" shape="circle">
-    </map>
+      <img id="screen" src="lcd.png" />
+      <img src="img/c1.png" class="turn" id="c6" />
+      <img src="img/c2.png" class="turn" id="c5" />
+      <img src="img/c3.png" class="turn" id="c4" />
+      <img src="img/c4.png" class="turn" id="c3" />
+      <img src="img/c5.png" class="turn" id="c2" />
+      <img src="img/c6.png" class="turn" id="c1" usemap="#image-map2" />
+      <map name="image-map2">
+        <area id="1" s="0" angle="90" coords="125,125,31" shape="circle" />
+        <area id="2" s="0" angle="60" coords="125,125,50" shape="circle" />
+        <area id="3" s="0" angle="45" coords="125,125,68" shape="circle" />
+        <area id="4" s="0" angle="30" coords="125,125,87" shape="circle" />
+        <area id="5" s="0" angle="36" coords="125,125,106" shape="circle" />
+        <area id="6" s="0" angle="15" coords="125,125,125" shape="circle" />
+      </map>
     </div>
     <div id="message">
-        <div id="txt">
-            SECRET NOTEBOOK
-        </div>
+      <div id="txt">
+        SECRET NOTEBOOK
+      </div>
     </div>
-    <img id="keyboard_" src="keyboard.png" >
-    <button id="back">back</button>
+    <div class="kboard">
+      <img id="keyboard_" src="keyboard.png" />
+    </div>
+    <button id="back">
+      <div class="flex">
+        <i class="material-icons">reply</i><span>Back</span>
+      </div>
+    </button>
+    <div class="win">Congrats! You cracked it!</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="puzz_3.js"></script>
-</body>
-
+  </body>
 </html>
