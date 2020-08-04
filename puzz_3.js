@@ -88,6 +88,8 @@ function check() {
   }
   if (flag == true) {
     $("#win").css("display", "block ");
+    $("#end").css("display", "none");
+    $("#back").css("display", "none");
   }
 }
 
