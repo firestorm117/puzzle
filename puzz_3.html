@@ -27,6 +27,7 @@
         coords="33,54,89,166,307,56,311,0,146,0"
         shape="poly"
       />
+      <area id="clue_sheet" coords="151,201,235,251,226,259,115,259" shape="poly">
       <area id="tab" coords="355,64,401,82,428,9,402,0,384,1" shape="poly" />
       <area
         id="mobile"
@@ -47,18 +48,18 @@
       <img src="img/c4.png" class="turn" id="c3" />
       <img src="img/c5.png" class="turn" id="c2" />
       <img src="img/c6.png" class="turn" id="c1" usemap="#image-map2" />
-      <map name="image-map2">
+      <map name="image-map2" id="turning">
         <area id="1" s="0" angle="90" coords="125,125,31" shape="circle" />
         <area id="2" s="0" angle="60" coords="125,125,50" shape="circle" />
         <area id="3" s="0" angle="45" coords="125,125,68" shape="circle" />
-        <area id="4" s="0" angle="30" coords="125,125,87" shape="circle" />
-        <area id="5" s="0" angle="36" coords="125,125,106" shape="circle" />
+        <area id="4" s="0" angle="36" coords="125,125,87" shape="circle" />
+        <area id="5" s="0" angle="30" coords="125,125,106" shape="circle" />
         <area id="6" s="0" angle="15" coords="125,125,125" shape="circle" />
       </map>
     </div>
     <div id="message">
       <div id="txt">
-        SECRET NOTEBOOK
+        MYSTERY NOTEBOOK
       </div>
     </div>
     <div class="kboard">
@@ -71,13 +72,22 @@
     </button>
     <div id='ph'>
         <img src="img/clue1.png" class="phd" id="clue1">
-        <div class="phd" id="task1">
+        <div  id="task1"><br>
             How many secrets do we have??
-            
-      <input type="text" placeholder="Enter your answer here" id="answer" value=""><button id="submit" onclick="task1_check()">Submit</button>
+            <br>
+      <input type="text" placeholder="Enter your answer here" id="answer" value=""><br><button id="submit" onclick="task1_check()">Submit</button>
             </div>
 
     </div>
+    <div id='tb'>
+        <img id="clue3" src="img/clue3.png">
+        <div id='task2'>
+        </div>
+    </div>
+    <div id="color_sheet">
+        <img src='img/sheet.jpg' id="col_sheet">
+        <img src='img/clue2.png' id="clue2">
+        </div>
     <div id="win" class="win">Congrats! You cracked it!</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="puzz_3.js"></script>

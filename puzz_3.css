@@ -17,10 +17,15 @@
 }
 #end {
   display: none;
+  position: relative;
+  width:500px;
+  margin-left: 10%;
+  margin: auto;
+  margin-top: -13rem;
 }
 .turn {
   transition: transform 1s;
-  position: fixed;
+  position: absolute;
   top: 95px;
   left: 135px;
   width: 250px;
@@ -28,7 +33,7 @@
   z-index: 10;
 }
 #screen {
-  position: fixed;
+  position: absolute;
   width: 680px;
   height: 500px;
   top: 30px;
@@ -156,5 +161,85 @@ body {
 }
 #task1{
   display: block;
-
+  position: relative;
+  left:35px;
+  top:94px;
+  width:320px;
+  height:506px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.5em;
 }
+#answer{
+  width:100px;
+  height:50px;
+  margin-bottom: 20px;
+}
+#submit{
+  color:wheat;
+  background-color: transparent;
+  border :none;
+  cursor: pointer;
+  font-size: .5em;
+}
+#color_sheet{
+  margin: auto;
+  cursor: pointer;
+  margin-top: -13rem;
+  display: none;
+  width:300px;
+  height:450px;
+}
+#col_sheet{
+  position: relative;
+  width:300px;
+  height:450px;
+}
+#clue2{
+  display: none;
+  width:300px;
+  height:450px;
+}
+
+#tb {
+  display:none;
+  width: 400px;
+  height: 264px;
+  background-color: transparent;
+  background-size: 100% 100%;
+  background-image: url(img/tab.png);
+  margin: auto;
+  margin-top: -8rem;
+}
+
+#clue3 {
+  display: none;
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: 20px;
+  left: 50px;
+}
+
+#task2 {
+  background-color: black;
+  position: relative;
+  width: 311px;
+  height: 235px;
+  top: 15px;
+  left: 42px;
+}
+#task2 >  button{
+      width:10%;
+      height: 10%;
+      margin-top:70px;
+      margin-left:50px;
+      background-color: transparent;
+      border: none;text-align: center;
+      text-decoration: none;
+      color:white;
+      display: inline-block;
+      font-size: 4em;
+      }
