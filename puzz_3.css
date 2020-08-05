@@ -169,7 +169,11 @@ body {
   color:white;
   text-align: center;
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.3em;
+}
+#wrong_pin{
+  color:red;
+  visibility: hidden;
 }
 #answer{
   width:100px;

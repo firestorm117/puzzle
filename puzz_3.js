@@ -2,7 +2,7 @@ var txts = [
   "Dr.LUCRETIUS HARRINGTON",
   "Dr.Lucretius Harrington was one of the world's leading scientists in field of alien technology.It was in the year 1984 when he found his greatest discovery.",
   "Dr.Harrington's to sucess was study of a live alien species 'Nebrai' .His strange results concluded that the alien liked flowers ,sparkling items and strangely feels joy in pressing a fellow scientist light board buttons. ",
-  "Dr.Harrington always kept his destkop locked with strange puzzles.He also liked to play a world famous game which is one of the best sellers till date and also holds a world record for most ported video game tiltle .Afer all it was released on day of his greatest discovery.",
+  "Dr.Harrington always kept his destkop locked with strange puzzles.He also liked to play a world famous game which is one of the best sellers till date and also holds a world record for most ported video game tiltle (You can google it to confirm).Afer all it was released on day of his greatest discovery.",
 ];
 const c3=['2','6','R','8','E','9','5','D','K','3'];
 const cc3=[9,2,5];
@@ -30,6 +30,7 @@ $("#tab").click(function (e) {
 });
 $("#mobile").click(function (e) {
     $("#ph").css("display", "block");
+    $("#wrong_pin").css('visibility','hidden');
     disp_def()
 });
 $("#notes").click(function (e) {
@@ -100,6 +101,10 @@ function task1_check()
             if($("#answer").val()=='1984'){
                 $("#task1").css('display','none');
                 $("#clue1").css('display','block');
+            }
+            else{
+              $("#wrong_pin").css('visibility','visible');
+              $("#answer").val("");
             }
         }
        
